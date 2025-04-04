@@ -2,6 +2,7 @@
 
 > Modular and enriched shell history plugin — offline-friendly, Zsh-ready, Bash-compatible.
 
+<img src="assets/img/corvo-logo.png" alt="Corvo-Logo" width="400"/>
 ---
 
 ## 📦 Features
