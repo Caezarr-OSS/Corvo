@@ -1,0 +1,53 @@
+#!/bin/bash
+
+print_help() {
+  echo "Corvo Shell History CLI"
+  echo
+  echo "Usage:"
+  echo "  corvo history                 Show enriched history"
+  echo "  corvo filter [--context=]     Filter history by context"
+  echo "               [--exit=]        Filter by exit code"
+  echo "  corvo theme list              List available themes"
+  echo "  corvo theme use <name>        Activate theme"
+  echo "  corvo watch-history           Watch live history updates"
+  echo "  corvo help                    Show this help"
+  echo
+}
+
+case "$1" in
+  history)
+    history-filter
+    ;;
+  filter)
+    shift
+    history-filter "$@"
+    ;;
+  theme)
+    shift
+    case "$1" in
+      list)
+        list-history-themes
+        ;;
+      use)
+        shift
+        set-history-theme "$1"
+        ;;
+      *)
+        echo "❌ Unknown theme subcommand: $1"
+        ;;
+    esac
+    ;;
+  watch-history)
+    if command -v watch-history >/dev/null 2>&1; then
+      watch-history
+    else
+      echo "❌ 'watch-history' not available or not enabled (CORVO_ENABLE_WATCH_FUNCTIONS=0)."
+    fi
+    ;;
+  help | --help | -h)
+    print_help
+    ;;
+  *)
+    print_help
+    ;;
+esac
