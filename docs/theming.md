@@ -98,4 +98,4 @@ COLOR_EXIT_OTHER="\033[1;34m"
 
 ---
 
-Happy theming 🦉
+Happy theming 🐦‍⬛

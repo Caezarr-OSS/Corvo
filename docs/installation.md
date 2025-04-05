@@ -56,24 +56,55 @@ corvo theme list   # list available themes
 
 ---
 
-## 🧹 Uninstallation (Manual)
+---
 
-Corvo is non-invasive. To uninstall:
+## 🧹 Uninstallation
 
-1. Remove this from your `.zshrc` or `.bashrc`:
-   ```bash
-   source ~/.config/corvo/zsh/loader.zsh   # or bash equivalent
-   export PATH="$HOME/.config/corvo/bin:$PATH"
-   alias history='history-filter'
-   ```
+Corvo is modular and safe to remove. To fully uninstall:
 
-2. Delete the configuration directory:
-   ```bash
-   rm -rf ~/.config/corvo
-   rm -f ~/.corvo_history
-   ```
+### 1. Remove lines from your `.zshrc` or `.bashrc`
+
+Open your shell config and delete any of the following if present:
+
+```bash
+# Corvo loader
+source "$HOME/.config/corvo/zsh/loader.zsh"  # or bash equivalent
+
+# Alias to override history
+alias history='history-filter'
+
+# Corvo CLI in PATH
+export PATH="$HOME/.config/corvo/bin:$PATH"
+```
+
+Then, apply changes:
+```bash
+source ~/.zshrc   # or ~/.bashrc
+```
 
 ---
+
+### 2. Remove Corvo files
+
+```bash
+rm -rf ~/.config/corvo
+rm -f ~/.corvo_history
+```
+
+---
+
+### 3. (Optional) Keep enriched history
+
+If you want to keep `.corvo_history` for backup or analysis, you can export or archive it:
+
+```bash
+cp ~/.corvo_history ~/corvo-history-backup.txt
+```
+
+---
+
+✅ That's it — Corvo will no longer be active in your shell.
+
 
 ## 🌐 Advanced Installation
 
@@ -92,4 +123,4 @@ For full options, see [Theming Guide](./theming.md) and [Shell Functions](./func
 ---
 
 ✅ You’re ready!  
-Use Corvo to enrich your terminal history with context, colors, and clarity 🦉
+Use Corvo to enrich your terminal history with context, colors, and clarity 🐦‍⬛

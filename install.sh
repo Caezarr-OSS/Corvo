@@ -61,6 +61,6 @@ install_for_shell() {
 }
 
 # === Run ===
-echo "\n🦉 Installing Corvo..."
+echo "\n🐦‍⬛ Installing Corvo..."
 detect_shell
 install_for_shell

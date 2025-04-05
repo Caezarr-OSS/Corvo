@@ -77,4 +77,4 @@ rm -rf ~/.config/corvo
 
 Corvo is built with enterprise-grade principles, and designed to stay out of your way.
 
-Stay safe 🦉
+Stay safe 🐦‍⬛

@@ -1,4 +1,4 @@
-# 🦉 Corvo
+# 🐦‍⬛ Corvo
 
 > Modular and enriched shell history plugin — offline-friendly, Zsh-ready, Bash-compatible.
 
@@ -40,6 +40,15 @@ This will:
 - Enable the `corvo` command (optional CLI)
 
 For full instructions, see [📄 Installation Guide](./docs/installation.md).
+
+---
+
+
+## 🧹 Uninstallation
+
+Corvo can be removed cleanly at any time.
+
+See: [🧼 Uninstallation Instructions →](./docs/installation.md#-uninstallation)
 
 ---
 
@@ -133,4 +142,4 @@ corvo/
 ## 💬 Questions / Feedback?
 
 Open a discussion or share improvements internally.  
-Stay productive. Stay contextual. 🦉
+Stay productive. Stay contextual. 🐦‍⬛

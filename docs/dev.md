@@ -98,4 +98,4 @@ Please keep all additions:
 - Documented inside `docs/`
 - Optional / feature-toggled if intrusive
 
-Pull requests and ideas are welcome 🦉
+Pull requests and ideas are welcome 🐦‍⬛

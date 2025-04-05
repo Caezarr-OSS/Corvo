@@ -87,4 +87,4 @@ export CORVO_ENABLE_EXITCODE=0
 
 ---
 
-✅ If all the above passes, Corvo is ready and functioning correctly 🦉
+✅ If all the above passes, Corvo is ready and functioning correctly 🐦‍⬛
