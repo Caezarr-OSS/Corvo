@@ -22,7 +22,7 @@
 
 ### 1. Clone or extract the project
 ```bash
-git clone <your_internal_repo>/corvo.git
+git clone https://github.com/Caezarr-OSS/Corvo.git
 cd corvo
 ```
 
